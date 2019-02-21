@@ -49,10 +49,8 @@ var Jukebox = {
     "goo.gl/y7tRG4"
     ];
     for (var ind=0; ind < this.Playlist.length; ind++){
-      this.Playlist[ind].songimg = img_lnks[ind]
+      this.Playlist[ind].songimg = "https://" + img_lnks[ind]
     }
-    console.log(this.Playlist);
-
   },
 
   next(){
