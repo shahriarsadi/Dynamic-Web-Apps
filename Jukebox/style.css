@@ -1,1 +1,317 @@
+@charset "utf-8";
+html{
+	font-family: Gill Sans MT;
+	height: 100%
+}
 
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: Gill Sans MT;
+}
+
+/* --------------------------------------------------------------------Header Starts Here----------------------------------------------------------------*/
+
+#header{
+	text-align: center;
+	border-bottom: 2px solid black;
+	width: 100%;
+	margin: none;
+	padding: none;
+	height: inherit;
+
+	
+}
+
+#header a{
+	text-decoration: none;
+	color: black;
+}
+#header a:link, a:visited{
+	text-decoration: none;
+	color: black
+}
+
+#header:hover{
+	transition-duration: 0.5s;
+	text-shadow: 6px 0px 1px;
+}
+/* -----------------------------------------------------------------NavBar Starts Here----------------------------------------------------------------*/
+	
+.navbar{
+	background-color: white;
+	border-bottom: 1px solid black;
+	font-size: 125%;
+	
+	
+}
+.nav-item-supp{
+	text-decoration: line-through;
+	margin-right: inherit;
+	
+	
+}
+
+.nav-item-supp:hover{
+	transition-duration: 0.5s;
+	text-shadow: 6px 0px 1px;
+	
+}
+.nav-item-supp a{
+	text-decoration: none;
+	color: black;
+}
+.nav-item-supp a:link, a:visited{
+	text-decoration: none;
+	color: black
+}
+
+#navframe{
+	width: 100%;
+}
+/* --------------------------------------------------------------------Easter Starts Here----------------------------------------------------------------*/
+
+#easter{
+	text-align: center;
+	width: 100%;
+	margin: none;
+	padding: none;
+	height: 50px;
+	align-content: center;
+}
+/* --------------------------------------------------------------------Footer Starts Here----------------------------------------------------------------*/
+
+#footer {
+	font-size: 80%; 
+	text-align: center;
+	font-family: Gill Sans MT;
+	padding-bottom: 0px;
+	margin-bottom:0px;
+	margin-left: 49%;
+	position:absolute;
+	bottom: 0px;
+	padding-top: 1rem;
+
+	
+}
+#footer a{
+	text-decoration: none
+}
+
+#footer a:link, a:visited{
+	text-decoration: none
+}
+/* --------------------------------------------------------------------Content Starts Here----------------------------------------------------------------*/
+
+.content{
+	height: 120%;
+	font-size: 120%;
+	text-align: inherit;
+	display: inline-block;
+	position: relative;
+	align-content: center;
+	width: 50%;
+}
+
+.content a{
+	text-decoration: underline;
+	color:black
+}
+.content img{
+	float: left;
+	margin-left: 15%;
+}
+
+.content_bottoms{
+	margin-left: 15%;
+	margin-right:27%;
+	margin-top: 6%;
+
+
+}
+.content_other{
+	margin-left: 25%;
+	margin-right:35%;
+	margin-top: 0%
+
+}
+
+@media (max-width: 420px){
+	.media-body{
+		font-size: 85%
+	}
+}
+
+
+@media (min-width: 768px){
+	.media-body{
+		font-size: 115%
+	}
+}
+@media (min-width: 992px){
+	.media-body{
+		font-size: 135%
+	}
+}
+
+/* --------------------------------------------------------------------Table Starts Here----------------------------------------------------------------*/
+td:hover{
+	background: rgba(225,225,225,.5);
+	cursor: pointer;
+	transition-duration: 0.5s;
+
+}
+
+
+.table, 
+.table-bordered{
+	margin:auto;
+	width: 50% !important; 
+}
+
+
+
+
+@media (max-width: 450px){
+	tbody{
+		font-size: 90%; 
+	}
+}
+
+
+@media (min-width: 420px){
+	.d-xs-block{
+		display: block !important
+	}
+}
+@media (max-width: 420px){
+	.table-sm-res th,
+	.table-sm-res td {
+	  	padding: 0.4rem 0.2rem ;
+	}
+}
+
+
+.table_col{
+	background: -moz-linear-gradient(top, rgba(255,107,96,0.65) 0%, rgba(125,185,232,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(255,107,96,0.65) 0%,rgba(125,185,232,0.25) 100%);
+	background: linear-gradient(to bottom, rgba(255,107,96,0.65) 0%,rgba(125,185,232,0.00) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6ff6b60', endColorstr='#a67db9e8',GradientType=0 );
+}
+
+/* Changed Tooltip Tings*/
+.tooltip-inner {
+	min-width: auto;
+    max-width: 250px;
+    padding: 3px 8px;
+    background-color:rgba(255,255,255,1.00);
+    border-radius: .15rem;
+	color: rgba(0,0,0,1.00);
+	box-shadow: 1.5px 1.5px 10px 2px rgba(146,146,146,1.00);
+	min-height: auto;
+	max-height: 250px;
+	text-overflow: inherit
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before, .tooltip.bs-tooltip-top .arrow::before {
+    margin-left: -3px;
+    content: "";
+    border-width: 5px 5px 0;
+    border-top-color: #fff;
+}
+
+.tooltip.bs-tooltip-bottom .arrow::before, .tooltip.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+  margin-left: -3px;
+  content: "";
+  border-width: 0 5px 5px;
+  border-bottom-color: #fff;
+}
+
+/*Reference Tooltip CSS*/
+.tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  margin: 0;
+  font-family: Gill Sans MT;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: left !important;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+  font-size: 0.875rem;
+  word-wrap: break-word;
+  opacity: 0;
+}
+
+.tooltip img{
+	margin: 1% 5%;
+}
+
+.tooltip p{ 
+	text-align: left;
+	padding-top: 1%;
+	padding-bottom: 1px;
+	font-size: 90%
+}
+
+/*-----------------------------------------------------------------------------Button Code---------------------------------------------------------------*/ 
+.button{
+	padding: 2% 5%;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	transition-duration: 0.3s;
+	align-items: center;
+	margin:auto;
+	position: inherit;
+	box-shadow: 1px 1px 10px 2px #e7e7e7 ;	
+	
+}
+
+/*Streetwear Button*/ 
+
+.button_street{
+	color: black;
+	border: 2px solid RGBa(231, 231, 231, 1.00);
+	margin-left: 44%
+
+}
+
+.button_street:hover{
+	background-color: #e7e7e7;
+	
+}
+/* General Button*/
+
+.button_gen{
+	color: black;
+	border: 2px solid RGBa(231, 231, 231, 1.00) ;
+	margin-left: 44%
+
+	
+
+}
+.button_gen:hover{
+	background-color: #e7e7e7;
+	
+}
+ /*Images Modifyer */
+ .images{
+    position: static;
+    float: center;
+    padding-left: 5%; 
+    padding-right: 5%;
+    width:  300px;
+    height: 300px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+ }
