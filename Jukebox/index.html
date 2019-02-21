@@ -7,14 +7,20 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1> Play This  </h1>
-    <p><img id="currimg" src="goo.gl/hVvouk" /> </p>
-    <button id= "previous" onclick="Jukebox.prev()"> Previous </button>
-      <audio controls id= "audiotag">
+    <div id= "header">
+      <h2 class "font-weight-bold"> JO'S BOX  </h2>
+
+    </div>
+    <center>
+    <p><img class= "images" id="currimg" src="https://goo.gl/hVvouk"> </p>
+    <button id= "previous" onclick="Jukebox.prev()" class = "button"> Prev </button>
+    <button class = "button" id="playbut" onclick="Jukebox.playsong()"> Play </button>
+    <button class = "button" id="pausebut" onclick="Jukebox.pausesong()"> Pause </button>
+      <audio id= "audiotag">
         <source  src="https://goo.gl/geFEhr" id = "mainsong">
-      </audio> 
-      <button id = "next" onclick="Jukebox.next()"> Next </button>
-    <ul id = "Playlist">
+      </audio>
+      <button id = "next" onclick="Jukebox.next()" class = "button"> Next </button>
+    <ul style= "list-style:none" id = "Playlist" >
       <li id = "song1ti"><source id = "song1" src="https://goo.gl/geFEhr" type="audio/mpeg"> At Your Best You Are Love </li>
       <li id = "song2ti"><source id = "song2" src="https://goo.gl/Ay5CAx" type="audio/mpeg"> Alabama </source></li>
       <li id = "song3ti"><source id = "song3" src="https://goo.gl/rM9tZr" type="audio/mpeg"> Comme Des Garcons </source></li>
@@ -25,8 +31,7 @@
     <input type="text" id="newtitle" value="Title" onfocus="this.value==this.defaultValue?this.value='':null" />
     <input type="text" id="newimg" value="Image Link" onfocus="this.value==this.defaultValue?this.value='':null" />
     <input type="text" id="newsong" value="Song Link" onfocus="this.value==this.defaultValue?this.value='':null" />
-    <button id = "addsong" onclick = "Jukebox.AddSongs()"> Submit </button>
-
+    <button id = "addsong" onclick = "Jukebox.AddSongs()" class= "button"> Submit </button>
 
     <script src="script.js"></script>
   </body>
