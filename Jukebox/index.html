@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Jukebox</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1> Play This  </h1>
+    <p><img id="currimg" src="goo.gl/hVvouk" /> </p>
+    <button id= "previous" onclick="Jukebox.prev()"> Previous </button>
+      <audio controls id= "audiotag">
+        <source  src="https://goo.gl/geFEhr" id = "mainsong">
+      </audio> 
+      <button id = "next" onclick="Jukebox.next()"> Next </button>
+    <ul id = "Playlist">
+      <li id = "song1ti"><source id = "song1" src="https://goo.gl/geFEhr" type="audio/mpeg"> At Your Best You Are Love </li>
+      <li id = "song2ti"><source id = "song2" src="https://goo.gl/Ay5CAx" type="audio/mpeg"> Alabama </source></li>
+      <li id = "song3ti"><source id = "song3" src="https://goo.gl/rM9tZr" type="audio/mpeg"> Comme Des Garcons </source></li>
+      <li id = "song4ti"><source id = "song4" src="https://goo.gl/EJF9tn" type="audio/mpeg"> Higgs </source></li>
+      <li id = "song5ti"><source id = "song5" src="https://goo.gl/fQkoCk" type="audio/mpeg"> Unity </source></li>
+    </ul>
+    <h4>Add A Song!</h4>
+    <input type="text" id="newtitle" value="Title" onfocus="this.value==this.defaultValue?this.value='':null" />
+    <input type="text" id="newimg" value="Image Link" onfocus="this.value==this.defaultValue?this.value='':null" />
+    <input type="text" id="newsong" value="Song Link" onfocus="this.value==this.defaultValue?this.value='':null" />
+    <button id = "addsong" onclick = "Jukebox.AddSongs()"> Submit </button>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
