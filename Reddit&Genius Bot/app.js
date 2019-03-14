@@ -64,7 +64,7 @@ function main(snooper){
 	var postTitle;
 	var newline; 
 	//has to watch all of the subreddit, holds the commenting functions within 
-	snooper.watcher.getPostWatcher("testingground4bots")
+	snooper.watcher.getPostWatcher("hiphopheads")
 		.on('post', function(post){
 			//post is an object containing all post data 
 			console.log('A post was generated! The Post was posted by: ' + post.data.author);
