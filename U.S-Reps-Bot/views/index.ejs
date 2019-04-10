@@ -1,0 +1,21 @@
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOzQbv8sB76i4GvB5Nf0RIABYVyiuSplk&libraries=places"></script>
+ <link rel="stylesheet" type="text/css" href="public/css/style.css">
+<body> 
+	<h1> Find Your Reps! </h1> 
+	 <form action="/addSub" method="post" >
+	 	Address: <input type = "text" name = "address" id = "form"> <br> 
+	 	City: <input type = "text" name = "city" id = "form"> <br> 
+	 	State: <input type = "text" name = "state" id = "form"> <br> 
+		<input type="submit" value="Submit">
+	<ul>
+		<% if (message!==null){ %>
+			<% for (let i=0; i<message.length; ++i){ %>
+				<li> <%= message[i]; %> </li> <br>
+		<%	} %>
+	<%	} %>
+	</ul>
+	<% if (error !== null) { %>
+		<p> <%= error %> </p>
+	<%}%>
+	</form>
+</body>
