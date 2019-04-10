@@ -1,0 +1,16 @@
+html {
+	font-family: Clearview; 
+}
+
+body {
+	width: 17%;
+	padding: 5%;
+	border: 5%;
+}
+
+li { 
+	padding: 3%;
+	list-style-type: none; 
+ }
+
+ 
