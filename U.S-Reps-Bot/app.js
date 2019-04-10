@@ -83,4 +83,3 @@ app.post('/addSub', function(req, res){
 })
 
 
-// https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyCudCOVjB9xxsyHxEmYCsi1olMQWdmIR8Q&address=21%20Adelphi%20st%20Brooklyn%20NY
