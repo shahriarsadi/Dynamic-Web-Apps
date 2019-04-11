@@ -1,0 +1,23 @@
+{
+  "name": "us-reps-bot",
+  "version": "1.0.0",
+  "description": "This program will read a users address and give them information 
+about who their local representatives are",
+  "main": "This program will read a users address and give them information 
+about who their local representatives are",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^7.0.0",
+    "ejs": "^2.6.1",
+    "env": "0.0.2",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.11",
+    "request": "^2.88.0",
+    "yargs": "^13.2.2"
+  }
+}
